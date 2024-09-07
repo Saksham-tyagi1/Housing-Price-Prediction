@@ -1,12 +1,23 @@
-# Housing Price Prediction - Exploratory Data Analysis (EDA)
+# Housing Price Prediction - EDA & Feature Engineering
 ## Overview
-This repository contains a Jupyter notebook for performing Exploratory Data Analysis (EDA) on a housing price prediction dataset. The analysis includes examining the dataset, identifying and visualizing missing values, and exploring numerical and year-related features to understand their impact on housing prices.
+This project focuses on analyzing and transforming a dataset to predict housing prices. It involves two main parts: Exploratory Data Analysis (EDA) to understand the data, and Feature Engineering to prepare the data for machine learning models. The dataset used is sourced from Kaggle, with the goal of predicting house prices based on various features.
+
 ## Contents
-#### Data Loading: Instructions for loading the dataset from a CSV file.
-#### Initial Data Exploration: Procedures for displaying initial data and summary statistics.
-#### Missing Values Analysis: Techniques for identifying, quantifying, and visualizing missing values.
-#### Numerical Features Analysis: Exploration of numerical features and their relationship with the target variable.
-#### Year-Related Features Analysis: Investigation of how year-related features affect housing prices.
-### Acknowledgments
-The dataset used in this analysis is from Kaggle.
-Special thanks to Krish Naik.
+### 1. Exploratory Data Analysis (EDA)
+#### Data Loading: Load the dataset and explore its structure.
+#### Initial Data Exploration: Perform basic statistical analysis to understand the overall data.
+#### Missing Values: Identify missing values in both categorical and numerical features and visualize them.
+#### Numerical Features: Analyze numerical features to assess their distribution and relationship with house prices.
+#### Year-Related Features: Investigate how features like construction year or remodel year affect house prices.
+### 2. Feature Engineering
+#### Handling Missing Data: Apply appropriate strategies to handle missing values in categorical and numerical features to ensure completeness of the dataset.
+#### Log Transformation: Apply logarithmic transformation to numerical features that are highly skewed to make them more normally distributed and improve model performance.
+#### Rare Label Encoding: Identify rare categories in categorical variables and group them into a single category to avoid overfitting.
+#### Categorical Feature Encoding: Convert categorical features into numerical values by encoding them based on their impact on the target variable.
+#### Feature Scaling: Scale numerical features to a consistent range using techniques like Min-Max Scaling, which ensures that the model interprets all features on the same scale.
+## Summary
+Exploratory Data Analysis (EDA) is performed to get a clear understanding of the data and its structure.
+Feature Engineering steps like missing value imputation, log transformation, encoding, and scaling are applied to ensure that the data is clean and well-prepared for model building.
+Acknowledgments
+The dataset is from Kaggle. Special thanks to Krish Naik for his tutorials and guidance in developing this project.
+
